@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Торгово-сервисный центр</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="p-3 bg-light text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="media/img/logo_12.png" width="50" alt="Логотип">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/index.html" class="nav-link px-2 text-black">Главная</a></li>
+                    <li><a href="/products.html" class="nav-link px-2 text-black">Товары и услуги</a></li>
+                    <li><a href="/orders.html" class="nav-link px-2 text-black">Заказы</a></li>
+                    <li><a href="#hero" class="nav-link px-2 text-black">О нас</a></li>
+                </ul>
+
+                <a href="/basket.html" class="nav-link px-2 text-black pe-md-3">
+                    <i class="fa fa-shopping-basket"></i>
+                    Корзина
+                </a>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Поиск" aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <a class="btn btn-outline-dark me-2" href="authorization.html">Логин</a>
+                    <a class="btn btn-warning" href="registration.html">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="media/img/bg_3.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                            width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Торгово-сервисный центр</h1>
+                        <p class="lead">Мы старейшая и известнейшая в своём регионе компания по продаже и ремонту
+                            смартфонов. Выполняем первоклассный и своевременный ремонт техники любой сложности. Самые
+                            низкие цены на смартфоны только у нас. Наши сервисы расположены в 12 городах страны.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a class="btn btn-outline-warning text-dark px-4 me-md-2">Наши товары и
+                                услуги</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actual bg-light">
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom bg">Популярные услуги</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                            <i class="fa fa-wrench pt-2"></i>
+                        </div>
+                        <div>
+                            <h2>Замена стекла</h2>
+                            <p>Заменим в кротчайшие сроки повреждённое стекло на вашем телефоне. Цена не зависит от модели телефона.
+                            </p>
+                            <a href="#" class="btn btn-warning">
+                                Перейти
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                            <i class="fa fa-laptop pt-2"></i>
+                        </div>
+                        <div>
+                            <h2>Диагностика неисправностей</h2>
+                            <p>Выявим неисправности в вашем телефоне и проконсультируем.</p>
+                            <a href="#" class="btn btn-warning">
+                                Перейти
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                            <i class="fa fa-shield pt-2"></i>
+                        </div>
+                        <div>
+                            <h2>Нанесение защитного стекла</h2>
+                            <p>Идеально нанесём защитное стекло на ваш телефон, чтобы предотвратить повреждение его
+                                стекла.</p>
+                            <a href="#" class="btn btn-warning">
+                                Перейти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <section class="products">
+                <div class="container px-4 py-5">
+                    <h2 class="pb-2 border-bottom">Популярные модели смартфонов</h2>
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 row-cols-md-2 g-4 py-5">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="media/img/smart_1.jpg" class="card-img-top" alt="Samsung Galaxy SCX-3200">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Galaxy SCX-3200</h5>
+                                    <p class="card-text">Передовая модель телефонов марки SAMSUNG. 8 ядерный процессор,
+                                        накопитель на 128 GB, 16 GB оперативной памяти.</p>
+                                    <div class="card-text pb-3">
+                                        <h5>
+                                            <i class="fa fa-ruble"></i>
+                                            79,999
+                                        </h5>
+                                        <small class="text-muted text-end">В наличии: 27 шт.</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning text-black">В корзину</button>
+                                            <button type="button" class="btn btn-outline-warning text-black">Страница
+                                                товара</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="media/img/smart_2.jpg" class="card-img-top" alt="Xiaomi Redmi Note 40 Pro">
+                                <div class="card-body">
+                                    <h5 class="card-title">Xiaomi Redmi Note 40 Pro</h5>
+                                    <p class="card-text">Передовая модель телефонов марки Xiaomi. 8 ядерный процессор,
+                                        накопитель на 64 GB, 8 GB оперативной памяти.</p>
+                                    <div class="card-text pb-3">
+                                        <h5>
+                                            <i class="fa fa-ruble"></i>
+                                            49,949
+                                        </h5>
+                                        <small class="text-muted text-end">В наличии: 6 шт.</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning text-black">В корзину</button>
+                                            <button type="button" class="btn btn-outline-warning text-black">Страница
+                                                товара</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="media/img/smart_1.jpg" class="card-img-top" alt="Poke Phone 5600 Pro">
+                                <div class="card-body">
+                                    <h5 class="card-title">Poke Phone 5600 Pro</h5>
+                                    <p class="card-text">Передовая модель телефонов марки Poke. 8 ядерный процессор с
+                                        12 потоками, накопитель на 128 GB, 16 GB оперативной памяти.</p>
+                                    <div class="card-text pb-3">
+                                        <h5>
+                                            <i class="fa fa-ruble"></i>
+                                            89,999
+                                        </h5>
+                                        <small class="text-muted text-end">В наличии: 15 шт.</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning text-black">В корзину</button>
+                                            <button type="button" class="btn btn-outline-warning text-black">Страница
+                                                товара</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-muted">Главная</a></li>
+                        <li class="nav-item mb-2"><a href="/products.html" class="nav-link p-0 text-muted">Товары и услуги</a></li>
+                        <li class="nav-item mb-2"><a href="/orders.html" class="nav-link p-0 text-muted">Заказы</a></li>
+                        <li class="nav-item mb-2"><a href="#hero" class="nav-link p-0 text-muted">О нас</a></li>
+                        <li class="nav-item mb-2"><a href="/basket.html" class="nav-link p-0 text-muted">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md">
+                    <h5>Аккаунт</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="/authorization.html" class="nav-link p-0 text-muted">Логин</a></li>
+                        <li class="nav-item mb-2"><a href="/registration.html" class="nav-link p-0 text-muted">Регистрация</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md">
+                    <h5>Связаться с нами</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Вконтакте</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Whatsup</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Telegram</a></li>
+                        <li class="nav-item mb-2 text-muted">+7 (800) 555-35-35</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 offset-xl-1">
+                    <form>
+                        <h5>Подпишитесь на нашу новостную рассылку</h5>
+                        <p>Еженеделельно уведомляем о новых товарах, услугах и скидках на них.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Электронная почта</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Электронная почта">
+                            <button class="btn btn-warning" type="button">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>© 2023 ООО Торгово-сервисный центр</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/vk.png" width="25" height="25" alt="VK">
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/whatsup.png" width="25" height="25" alt="Whatsup">
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/telegram.png" width="25" height="25" alt="Telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

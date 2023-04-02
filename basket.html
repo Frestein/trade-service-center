@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Торгово-сервисный центр</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="p-3 bg-light text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="media/img/logo_12.png" width="50" alt="Логотип">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/index.html" class="nav-link px-2 text-black">Главная</a></li>
+                    <li><a href="/products.html" class="nav-link px-2 text-black">Товары и услуги</a></li>
+                    <li><a href="/orders.html" class="nav-link px-2 text-black">Заказы</a></li>
+                    <li><a href="/index.html#hero" class="nav-link px-2 text-black">О нас</a></li>
+                </ul>
+
+                <a href="/basket.html" class="nav-link px-2 text-black pe-md-3">
+                    <i class="fa fa-shopping-basket"></i>
+                    Корзина
+                </a>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Поиск" aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <a class="btn btn-outline-dark me-2" href="authorization.html">Логин</a>
+                    <a class="btn btn-warning" href="registration.html">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="basket">
+            <div class="py-5 text-center">
+                <h2>Корзина</h2>
+                <p class="lead">Оплатите без регистрации выбранные товары и услуги картой или наличными при получении.</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-warning">Ваша корзина</span>
+                        <span class="badge bg-warning rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Samsung Galaxy SCX-5600</h6>
+                                <small class="text-muted">Смартфон</small>
+                            </div>
+                            <span class="text-muted">
+                                <i class="fa fa-ruble"></i>
+                                79,999
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Нанесение защитного стекла</h6>
+                                <small class="text-muted">Услуга</small>
+                            </div>
+                            <span class="text-muted">
+                                <i class="fa fa-ruble"></i>
+                                600
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Чехол на SAMSUNG Galaxy SCX-5600</h6>
+                                <small class="text-muted">Аксессуар</small>
+                            </div>
+                            <span class="text-muted">
+                                <i class="fa fa-ruble"></i>
+                                800
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Промокод</h6>
+                                <small>EASYMONEY</small>
+                            </div>
+                            <span class="text-success">−<i class="fa fa-ruble"></i>500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Сумма</span>
+                            <strong>
+                                <i class="fa fa-ruble"></i>
+                                80,899
+                            </strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Промокод">
+                            <button type="submit" class="btn btn-secondary">Подтвердить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Контактные данные</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Иван" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Некорректное имя.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Иванов" value=""
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Некорректная фамилия.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Отчество</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="username" placeholder="Иванович"
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Некорректное отчество.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Электронная почта <span
+                                        class="text-muted">(Необязательно)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.ru">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Адрес</label>
+                                <input type="text" class="form-control" id="address" placeholder="г. Норильск, 54"
+                                    required="">
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите адрес верно.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">Адрес 2 <span
+                                        class="text-muted">(Необязательно)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Квартира">
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Оплатить при получении</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Сохранить информацию для следующих покупок</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Способ оплаты</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                                    required="">
+                                <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                    required="">
+                                <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                    required="">
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Банк</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Некорректное название банка.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Номер карты</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    Некорректный номер карты.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Срок истечения</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="11/22" required="">
+                                <div class="invalid-feedback">
+                                    Некорректная дата срока истечения.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="123" required="">
+                                <div class="invalid-feedback">
+                                    Некорректный защитный код.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-warning btn-lg" type="submit">Продолжить и оплатить</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-muted">Главная</a></li>
+                        <li class="nav-item mb-2"><a href="/products.html" class="nav-link p-0 text-muted">Товары и услуги</a></li>
+                        <li class="nav-item mb-2"><a href="/orders.html" class="nav-link p-0 text-muted">Заказы</a></li>
+                        <li class="nav-item mb-2"><a href="/index.html#hero" class="nav-link p-0 text-muted">О нас</a></li>
+                        <li class="nav-item mb-2"><a href="/basket.html" class="nav-link p-0 text-muted">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md">
+                    <h5>Аккаунт</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="/authorization.html" class="nav-link p-0 text-muted">Логин</a></li>
+                        <li class="nav-item mb-2"><a href="/registration.html" class="nav-link p-0 text-muted">Регистрация</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md">
+                    <h5>Связаться с нами</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Вконтакте</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Whatsup</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Telegram</a></li>
+                        <li class="nav-item mb-2 text-muted">+7 (800) 555-35-35</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 offset-xl-1">
+                    <form>
+                        <h5>Подпишитесь на нашу новостную рассылку</h5>
+                        <p>Еженеделельно уведомляем о новых товарах, услугах и скидках на них.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Электронная почта</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Электронная почта">
+                            <button class="btn btn-warning" type="button">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>© 2023 ООО Торгово-сервисный центр</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/vk.png" width="25" height="25" alt="VK">
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/whatsup.png" width="25" height="25" alt="Whatsup">
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="#">
+                            <img src="media/img/telegram.png" width="25" height="25" alt="Telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

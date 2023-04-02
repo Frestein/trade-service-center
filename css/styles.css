@@ -1,0 +1,11 @@
+.hero {
+    background-color: rgb(240, 240, 240);
+}
+
+.products {
+    background-color: rgb(240, 240, 240);
+}
+
+.basket, .auth, .registration {
+    padding-bottom: 50px;
+}
